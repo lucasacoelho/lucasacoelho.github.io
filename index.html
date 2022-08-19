@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformaçao de medidas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img id = "logo_2"src="./img/knntheworld.png" alt="">
+        </div>
+        <ul id = "nav">
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="contact">contact us</a></li>
+        </ul>
+        <div>
+            <a href="../projeto_duda_eng/index.html" target="_blank"><img id = "bandeira" src="./img/bandeira_eua.png" alt="bandeira eua"></a>
+        </div>
+    </header>  
+    <main>
+        <div class="container">
+            <h2>Vamos trabalhar com a transformaçao de medidas como kilos para pounds e metros/centimetros para feets!</h2>
+            <label for="altura">valor da altura: <input type="number" id="altura"><select id="tipo">
+                <option id="cm">cm</option>
+                <option id="feets">feets</option>
+            </select></label>
+            <br>
+            <br>
+            <label for="altura">valor do peso: <input type="number" id="peso"><select id="type">
+                <option id="kg">kilograms</option>
+                <option id="pounds">pounds</option>
+            </select></label>
+            <br>
+            <br>
+            <button onclick="calculo()">transformar</button>
+            <div id="contador">
+                <p id = "result"></p>
+                <div>
+                    <p id="resultado_alt"></p>
+                    <p id="resultado_pes"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="" alt="">
+        <a href="https://twitter.com/coelhoalucas">@Lucas_a_coelho</a>
+    </footer>  
+</body>
+</html>
