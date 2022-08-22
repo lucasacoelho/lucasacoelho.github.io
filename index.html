@@ -22,9 +22,9 @@
             <a href="../projeto_duda_eng/index.html" target="_blank"><img id = "bandeira" src="./img/bandeira_eua.png" alt="bandeira eua"></a>
         </div>
     </header>  
-    <main>
+    <main id = "main">
         <div class="container">
-            <h2>Vamos trabalhar com a transformaçao de medidas como kilos para pounds e metros/centimetros para feets!</h2>
+            <h2>Vamos trabalhar com a transformação de medidas como kilos para pounds e metros/centimetros para feets!</h2>
             <label for="altura">valor da altura: <input type="number" id="altura"><select id="tipo">
                 <option id="cm">cm</option>
                 <option id="feets">feets</option>
@@ -39,7 +39,6 @@
             <br>
             <button onclick="calculo()">transformar</button>
             <div id="contador">
-                <p id = "result"></p>
                 <div>
                     <p id="resultado_alt"></p>
                     <p id="resultado_pes"></p>
@@ -47,8 +46,32 @@
             </div>
         </div>
     </main>
+    <main class="Next">
+        <div class="main">
+            <h2>Vamos trabalhar com a transformação de Temperaturas!</h2>
+            <label for="temperatura">Informe a temperatura: <input type="number" id="valor">
+            <select id="tipo_grau1">
+                <option id="celsius">°C</option>
+                <option id="faren">°F</option>
+                <option id="kelvin">K</option>
+            </select><label for="para"> para 
+                <select id="tipo_grau2">
+                    <option id="faren">°F</option>
+                    <option id="celsius">°C</option>
+                    <option id="kelvin">K</option></label></label>
+                </select>
+            <br>
+            <br>
+            <button onclick="transformar()">transformar</button>
+            <div id="contador">
+                <p id = "result"></p>
+                <div>
+                    <p id="resultado_temp"></p>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
-        <img src="" alt="">
         <a href="https://twitter.com/coelhoalucas">@Lucas_a_coelho</a>
     </footer>  
 </body>
