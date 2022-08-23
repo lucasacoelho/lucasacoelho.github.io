@@ -42,32 +42,33 @@ function transformar(){
     var result = document.getElementById("resultado_temp")
     if (valor == "") {
         result.innerHTML =("Preencha os valores!")
-    }if (tipo === "°C" && type === "°C"){
+    }else{
+    if (tipo === "°C" && type === "°C"){
         result.innerHTML = (`${valor} °C`)
     }if (tipo === "°F" && type === "°F"){
         result.innerHTML = (`${valor} °F`)
     }if (tipo === "K" && type ==="K"){
         result.innerHTML = (`${valor} K`)
-    }else{  
-        if (tipo === "°C" && type === "°F") {
-           let resp = ((valor * 9)/5 + 32)
-           result.innerHTML = (`${valor} °C é igual a ${resp.toFixed(2)} °F`)
-        } if (tipo === "°C" && type === "K") {
-            let value = parseFloat(valor)
-            let resp = (value + 273.15)
-            result.innerHTML = (`${valor} °C é igual a ${resp.toFixed(3)} K`)
-        }if (tipo === "°F" && type === "°C") {
-            let resp = (((valor - 32)*5)/9)
-            result.innerHTML = (`${valor} °F é igual a ${resp.toFixed(0)} °C`)
-        }if (tipo === "°F" && type === "K") {
-            let resp = (((valor - 32)*5)/9 + 274.15)
-            result.innerHTML = (`${valor} °F é igual a ${resp.toFixed(3)} K`)
-        }if (tipo === "K" && type === "°C") {
-            let resp = (valor - 273.15)
-            result.innerHTML = (`${valor} K é igual a ${resp.toFixed(0)} °C`)
-        }if (tipo === "K" && type === "°F") {
-            let resp = (((valor - 273.15) * 9)/5 + 32)
-            result.innerHTML = (`${valor} K é igual a ${resp.toFixed(2)} °F`)
-        }
+    } 
+    if (tipo === "°C" && type === "°F") {
+        let resp = ((valor * 9)/5 + 32)
+        result.innerHTML = (`${valor} °C é igual a ${resp.toFixed(2)} °F`)
+    } if (tipo === "°C" && type === "K") {
+        let value = parseFloat(valor)
+        let resp = (value + 273.15)
+        result.innerHTML = (`${valor} °C é igual a ${resp.toFixed(3)} K`)
+    }if (tipo === "°F" && type === "°C") {
+        let resp = (((valor - 32)*5)/9)
+        result.innerHTML = (`${valor} °F é igual a ${resp.toFixed(0)} °C`)
+    }if (tipo === "°F" && type === "K") {
+        let resp = (((valor - 32)*5)/9 + 274.15)
+        result.innerHTML = (`${valor} °F é igual a ${resp.toFixed(3)} K`)
+    }if (tipo === "K" && type === "°C") {
+        let resp = (valor - 273.15)
+        result.innerHTML = (`${valor} K é igual a ${resp.toFixed(0)} °C`)
+    }if (tipo === "K" && type === "°F") {
+        let resp = (((valor - 273.15) * 9)/5 + 32)
+        result.innerHTML = (`${valor} K é igual a ${resp.toFixed(2)} °F`)
+    }
     }   
 }
