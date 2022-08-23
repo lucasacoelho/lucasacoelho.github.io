@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformaçao de medidas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/cropped-favicom-knn-32x32.png">
+    <script src="conversao.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img id = "logo_2"src="./img/knntheworld.png" alt="">
+        </div>
+        <ul id = "nav">
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="contact">contact us</a></li>
+        </ul>
+        <div>
+            <a href="../projeto_duda_pt/index.html"><img id = "bandeira" src="./img/bandeira-do-brasil-og.webp" alt="bandeira eua"></a>
+        </div>
+    </header>  
+    <main id = "main">
+        <div class="container">
+            <h2>We will work with measurements transformation like Kilos to pounds <br> and meters/centimeter to feets!</h2>
+            <label for="altura">height value: <input type="number" id="altura"><select id="tipo">
+                <option id="cm">cm</option>
+                <option id="feets">feets</option>
+            </select></label>
+            <br>
+            <br>
+            <label for="altura">Weight value: <input type="number" id="peso"><select id="type">
+                <option id="kg">kilograms</option>
+                <option id="pounds">pounds</option>
+            </select></label>
+            <br>
+            <br>
+            <button onclick="calculo()">Transform!</button>
+            <div id="contador">
+                <div>
+                    <p id="resultado_alt"></p>
+                    <p id="resultado_pes"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="Next">
+        <div class="main">
+            <h2>We will work with temperature transformation!</h2>
+            <label for="temperatura">Insert the temperature: <input type="number" id="valor">
+            <select id="tipo_grau1">
+                <option id="celsius">°C</option>
+                <option id="faren">°F</option>
+                <option id="kelvin">K</option>
+            </select><label for="para"> To 
+                <select id="tipo_grau2">
+                    <option id="faren">°F</option>
+                    <option id="celsius">°C</option>
+                    <option id="kelvin">K</option></label></label>
+                </select>
+            <br>
+            <br>
+            <button onclick="transformar()">Transform!</button>
+            <div id="contador">
+                <p id = "result"></p>
+                <div>
+                    <p id="resultado_temp"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="https://twitter.com/coelhoalucas">@Lucas_a_coelho</a>
+    </footer>  
+</body>
+</html>
